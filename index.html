@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Heading in the blue area -->
+  <h1 class="main-heading">Weather App</h1>
+
+  <div class="weather-app">
+    <!-- Label on top of input -->
+    <div class="search-box">
+      <label for="cityInput">Enter the city:</label>
+      <input type="text" id="cityInput" placeholder="e.g., London">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="weatherCard" class="weather-card hidden">
+      <h2 id="cityName"></h2>
+      <p id="datetime"></p>
+      <img id="weatherIcon" />
+      <p id="description"></p>
+      <p id="temperature"></p>
+      <p id="humidity"></p>
+      <p id="wind"></p>
+    </div>
+
+    <p id="errorMsg" class="error hidden"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
